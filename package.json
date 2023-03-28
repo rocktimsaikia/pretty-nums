@@ -1,0 +1,40 @@
+{
+  "name": "pretty-nums",
+  "description": "Convert numbers to a human readable string: 1234 → 1.2K",
+  "version": "0.0.0",
+  "repository": "rocktimsaikia/pretty-nums",
+  "author": {
+    "name": "Rocktim Saikia",
+    "email": "hello@rocktimsaikia.dev",
+    "url": "https://rocktimsaikia.dev"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "test": "ava"
+  },
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@ava/typescript": "^4.0.0",
+    "@types/node": "^18.15.10",
+    "ava": "^5.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "files": [
+      "*.test.ts"
+    ],
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ]
+  }
+}

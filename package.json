@@ -1,7 +1,7 @@
 {
   "name": "pretty-nums",
   "description": "Convert numbers to a human readable string: 1234 → 1.2K",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": "rocktimsaikia/pretty-nums",
   "author": {
     "name": "Rocktim Saikia",

@@ -1,5 +1,5 @@
 {
-  "name": "my-ts-lib",
+  "name": "pretty-nums",
   "version": "0.1.1",
   "description": "Convert numbers to a human readable string: 1234 → 1.2K",
   "repository": "rocktimsaikia/pretty-nums",
@@ -17,8 +17,10 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
   },
   "types": "./dist/index.d.ts",
   "scripts": {

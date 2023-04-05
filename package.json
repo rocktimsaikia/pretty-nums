@@ -1,0 +1,63 @@
+{
+  "name": "pretty-nums",
+  "version": "0.1.1",
+  "description": "Convert numbers to a human readable string: 1234 → 1.2K",
+  "repository": "rocktimsaikia/pretty-nums",
+  "author": {
+    "name": "Rocktim Saikia",
+    "email": "hello@rocktimsaikia.dev",
+    "url": "https://rocktimsaikia.dev"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "pkgroll",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@egoist/prettier-config": "1.0.0",
+    "prettier": "2.8.4",
+    "tsup": "6.6.3",
+    "typescript": "4.9.5",
+    "vitest": "0.28.5"
+  },
+  "keywords": [
+    "pretty",
+    "numbers",
+    "human",
+    "readable",
+    "string",
+    "convert",
+    "format",
+    "number formatting",
+    "pretty formatting",
+    "formatting",
+    "formatting numbers",
+    "formatting numbers to string",
+    "formatting numbers to human readable string",
+    "formatting numbers to human readable string in javascript",
+    "formatting numbers to human readable string in nodejs"
+  ],
+  "dependencies": {
+    "pkgroll": "^1.9.0"
+  }
+}

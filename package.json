@@ -30,7 +30,7 @@
   "scripts": {
     "build": "pkgroll",
     "test": "vitest run",
-    "prepublishOnly": "pnpm run build"
+    "prepack": "pnpm run build"
   },
   "license": "MIT",
   "devDependencies": {

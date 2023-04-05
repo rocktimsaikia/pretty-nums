@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "ES2020",
+    "target": "es2020",
+    "module": "esnext",
     "strict": true,
-    "outDir": "dist",
-    "declaration": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
-  },
-  "include": ["index.ts"],
-  "exclude": ["node_modules", "**/*.test.ts"]
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "noEmit": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+
+    "types": ["vitest/globals"]
+  }
 }

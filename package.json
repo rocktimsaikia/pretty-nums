@@ -29,8 +29,7 @@
   },
   "scripts": {
     "build": "pkgroll",
-    "test": "vitest run",
-    "prepublishOnly": "pnpm run build"
+    "test": "vitest run"
   },
   "license": "MIT",
   "devDependencies": {
